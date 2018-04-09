@@ -59,8 +59,16 @@ describe("About Applying What We Have Learnt", function() {
     expect(sum).toBe(233168);
   });
 
+  function range(start, end) {
+    var ans = [];
+    for (let i = start; i < end; i++) {
+        ans.push(i);
+    }
+    return ans;
+  }
+
   it("should add all the natural numbers below 1000 that are multiples of 3 or 5 (functional)", function () {
-    var sum = range(1000).reduce(function(x) {
+    var sum = range(0, 1000).reduce(function(x) {
       if (x % 3 === 0 || x % 5 === 0)
       return sum += y});    /* try chaining range() and reduce() */
 
