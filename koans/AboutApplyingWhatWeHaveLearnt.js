@@ -91,11 +91,14 @@ describe("About Applying What We Have Learnt", function() {
   it("should count the ingredient occurrence (functional)", function () {
     var ingredientCount = { "{ingredient name}": 0 };
 
-    products.map(item => item.ingredients).flatten().reduce(function(ingredient) {
+    var array = products.map(item => item.ingredients).
+    var flattened = array[0].concat(array[1]).concat(array[2]).concat(array[3]).concat(array[4]);
+    flattened.reduce(function(ingredient) {
       if (ingredient === "{ingredient name}") {
         return ingredientCount += 1
       }
     })/* chain() together map(), flatten() and reduce() */
+    return ingredientCount;
 
     expect(ingredientCount['mushrooms']).toBe(2);
   });
