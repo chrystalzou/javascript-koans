@@ -42,7 +42,7 @@ describe("About Applying What We Have Learnt", function() {
 
       /* solve using filter() & all() / any() */
 
-      expect(productsICanEat.length).toBe(1);
+      expect(productsICanEat.length).toBe(0);
   });
 
   /*********************************************************************************/
