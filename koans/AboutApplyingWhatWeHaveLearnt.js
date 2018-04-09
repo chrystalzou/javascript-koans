@@ -70,7 +70,7 @@ describe("About Applying What We Have Learnt", function() {
   it("should add all the natural numbers below 1000 that are multiples of 3 or 5 (functional)", function () {
     var sum = range(0, 1000).reduce(function(x) {
       if (x % 3 === 0 || x % 5 === 0)
-      return sum += y});    /* try chaining range() and reduce() */
+      return sum += x});    /* try chaining range() and reduce() */
 
     expect(233168).toBe(233168);
   });
